@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "g9packetlogger",
+  "version": "${version}",
+  "name": "G9packetLogger",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/maximeguy/G9packetLogger"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/g9packetlogger/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.maximumg9.g9packetlogger.client.G9packetLoggerClient"
+    ],
+    "main": [
+      "com.maximumg9.g9packetlogger.G9packetLogger"
+    ]
+  },
+  "mixins": [
+    "g9packetlogger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
